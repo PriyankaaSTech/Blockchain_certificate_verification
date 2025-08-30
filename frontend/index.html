@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Certificate DApp</h1>
+
+    <div>
+        <h2>Issue Certificate</h2>
+        <input id="studentName" placeholder="Student Name">
+        <input id="course" placeholder="Course Name">
+        <button onclick="issueCertificate()">Issue</button>
+    </div>
+
+    <div>
+        <h2>Verify Certificate</h2>
+        <input id="verifyId" placeholder="Certificate ID">
+        <button onclick="verifyCertificate()">Verify</button>
+        <p id="verifyResult"></p>
+    </div>
+
+    <div>
+        <h2>Revoke Certificate</h2>
+        <input id="revokeId" placeholder="Certificate ID">
+        <button onclick="revokeCertificate()">Revoke</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
